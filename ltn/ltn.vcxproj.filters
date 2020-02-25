@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{dfea82d1-ed09-42e9-899b-50982a5ab711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\server">
+      <UniqueIdentifier>{aaccbd45-1076-4a31-aa1c-dc86644e551f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{36ee5b5a-3f49-4f2d-9a72-9527595f630e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto">
+      <UniqueIdentifier>{52682560-66ce-4956-92fb-b6fab083f2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{252fccbd-f0b7-4e8b-9c9f-b14e4512b368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\common">
+      <UniqueIdentifier>{edfa5eb2-e4c6-484a-a246-61d6ddd9c084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\common\timer_module">
+      <UniqueIdentifier>{629c1de9-97b0-4d8d-8da9-9f516f40fe3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_server">
+      <UniqueIdentifier>{b66d7a50-e94a-4efa-b369-94994b980fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_server\conf_module">
+      <UniqueIdentifier>{9b598f2c-14bb-475a-a37f-5732d48b5c73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_client">
+      <UniqueIdentifier>{d8dba867-3c09-498d-acbf-a7c3425da880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_client\conf_module">
+      <UniqueIdentifier>{c98c4a7e-4668-4475-b8b6-24558bc5a68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_common">
+      <UniqueIdentifier>{0260ffff-d721-4869-95d2-82b57ceb24e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_common\codec">
+      <UniqueIdentifier>{6935ce96-131f-400f-80de-2ac89da633ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_client\io_module">
+      <UniqueIdentifier>{6745f05c-9326-49d8-aef2-b7979b133971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_common\common">
+      <UniqueIdentifier>{5566ed22-7463-4c02-9e13-e1f98d5a90ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_server\io_module">
+      <UniqueIdentifier>{715b0673-a534-4314-ae6b-dd34ec7141fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_common\file_module">
+      <UniqueIdentifier>{f1523eec-f44d-4690-b4bf-65349e3d01c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_server\upload_module">
+      <UniqueIdentifier>{8cca62be-4877-40bc-911e-c3b55e182685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_client\upload_module">
+      <UniqueIdentifier>{18010c48-839a-4c40-af60-07d3ed65c27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_server\download_module">
+      <UniqueIdentifier>{0039fce1-6878-4428-aeec-7073e7e7d731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_server\sync_module">
+      <UniqueIdentifier>{625d87f8-b27e-4c80-b4c4-06333b44a506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_client\sync_module">
+      <UniqueIdentifier>{8a538718-991c-4cac-b72c-73c8fe9613f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_client\download_module">
+      <UniqueIdentifier>{823251e2-b114-4a23-8cdb-79fccd7cb597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_common\resend">
+      <UniqueIdentifier>{4f445a91-eb82-4085-ad37-9a513841a8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\transfer_common\rate_control">
+      <UniqueIdentifier>{038ac024-49d1-4ee4-93e5-942a13bda744}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\server.cpp">
+      <Filter>src\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\arith_uint256.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\base58.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\chacha20.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\cleanse.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\hash.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\hmac_sha512.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\key.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\lockedpool.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\pubkey.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\random.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\ripemd160.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\sha256.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\sha256_sse4.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\sha512.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\uint256.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\3rd\crypto\utilstrencodings.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\common\timer_module\timer_generator_init.cpp">
+      <Filter>src\modules\common\timer_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_client\conf_module\trans_cli_config_manager.cpp">
+      <Filter>src\modules\transfer_client\conf_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_server\conf_module\trans_svr_config_manager.cpp">
+      <Filter>src\modules\transfer_server\conf_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\codec\TransMessageApi.pb.cc">
+      <Filter>src\modules\transfer_common\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\codec\trans_codec.cpp">
+      <Filter>src\modules\transfer_common\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_client\io_module\trans_cli_io_manager.cpp">
+      <Filter>src\modules\transfer_client\io_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_server\io_module\trans_svr_io_manager.cpp">
+      <Filter>src\modules\transfer_server\io_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\common\trans_task.pb.cc">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\common\trans_macro.cpp">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_reader.cpp">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_reader_manager.cpp">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_writer.cpp">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_writer_manager.cpp">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_client\transfer_client_module\trans_cli_upload_manager.cpp">
+      <Filter>src\modules\transfer_client\upload_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_server\transfer_server_module\trans_svr_upload_manager.cpp">
+      <Filter>src\modules\transfer_server\upload_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_client\transfer_client_module\trans_cli_download_manager.cpp">
+      <Filter>src\modules\transfer_client\download_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_server\transfer_server_module\trans_svr_download_manager.cpp">
+      <Filter>src\modules\transfer_server\download_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_server\transfer_server_module\trans_svr_sync_manager.cpp">
+      <Filter>src\modules\transfer_server\sync_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_client\transfer_client_module\trans_cli_sync_manager.cpp">
+      <Filter>src\modules\transfer_client\sync_module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\common\path_rtt.cpp">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\resend\resend_control.cpp">
+      <Filter>src\modules\transfer_common\resend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\resend\resend_scheduler.cpp">
+      <Filter>src\modules\transfer_common\resend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\rate_control\rate_control.cpp">
+      <Filter>src\modules\transfer_common\rate_control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\transfer_common\common\network_detect.cpp">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\common\util.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\service\init_server.cpp">
+      <Filter>src\server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\service\server.h">
+      <Filter>src\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\arith_uint256.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\base58.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\byteswap.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\chacha20.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\cleanse.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\crypto_common.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\crypto_endian.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\hash.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\hmac_sha512.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\key.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\lockedpool.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\pubkey.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\random.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\ripemd160.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\secure.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\sha256.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\sha512.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\tinyformat.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\uint256.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\3rd\crypto\utilstrencodings.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\common\timer_module\timer_generator_init.h">
+      <Filter>src\modules\common\timer_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_client\conf_module\trans_cli_config_manager.h">
+      <Filter>src\modules\transfer_client\conf_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_server\conf_module\trans_svr_config_manager.h">
+      <Filter>src\modules\transfer_server\conf_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\codec\TransMessageApi.pb.h">
+      <Filter>src\modules\transfer_common\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\codec\trans_codec.h">
+      <Filter>src\modules\transfer_common\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\codec\trans_service_message.h">
+      <Filter>src\modules\transfer_common\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_client\io_module\trans_cli_io_manager.h">
+      <Filter>src\modules\transfer_client\io_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\common\trans_macro.h">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_server\io_module\trans_svr_io_manager.h">
+      <Filter>src\modules\transfer_server\io_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\codec\trans_handler_initializer.h">
+      <Filter>src\modules\transfer_common\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\common\trans_task.pb.h">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_reader.h">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_reader_manager.h">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_writer.h">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_writer_manager.h">
+      <Filter>src\modules\transfer_common\file_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_client\transfer_client_module\trans_cli_upload_manager.h">
+      <Filter>src\modules\transfer_client\upload_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_server\transfer_server_module\trans_svr_upload_manager.h">
+      <Filter>src\modules\transfer_server\upload_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_client\transfer_client_module\trans_cli_download_manager.h">
+      <Filter>src\modules\transfer_client\download_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_server\transfer_server_module\trans_svr_download_manager.h">
+      <Filter>src\modules\transfer_server\download_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_server\transfer_server_module\trans_svr_sync_manager.h">
+      <Filter>src\modules\transfer_server\sync_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_client\transfer_client_module\trans_cli_sync_manager.h">
+      <Filter>src\modules\transfer_client\sync_module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\common\path_rtt.h">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\resend\resend_control.h">
+      <Filter>src\modules\transfer_common\resend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\resend\resend_scheduler.h">
+      <Filter>src\modules\transfer_common\resend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\rate_control\rate_control.h">
+      <Filter>src\modules\transfer_common\rate_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\transfer_common\common\network_detect.h">
+      <Filter>src\modules\transfer_common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\common\macro.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\common\util.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\common\bytes_order.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\service\init_server.h">
+      <Filter>src\server</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\service\common\util_asm.asm">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

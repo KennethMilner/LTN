@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{63339461-EC79-4205-B8DE-50C563EDA7C2}</ProjectGuid>
+    <RootNamespace>taskworker</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>ltn</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(SolutionDir)lib\leveldb;$(BOOST)\vc141-x64\lib\;$(SolutionDir)lib\protobuf-3.8.0;$(SolutionDir)lib\micro_core;$(SolutionDir)lib\openssl;$(SolutionDir)lib\secp256k1;$(SolutionDir)lib\lua-5.3.5_Win64_vc15_lib;$(SolutionDir)lib\libuv-v1.x;$(SolutionDir)lib\snappy;$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <IncludePath>$(SolutionDir)src\3rd\;$(SolutionDir)src\3rd\micro_core;$(SolutionDir)src\3rd\snappy;$(SolutionDir)src\3rd\boost_1_66_0;$(SolutionDir)src\3rd\protobuf-3.8.0;$(SolutionDir)src\3rd\openssl;$(SolutionDir)src\3rd\crypto;$(SolutionDir)src\3rd\secp256k1;$(SolutionDir)src\3rd\secp256k1\include;$(SolutionDir)src\3rd\lua-5.3.5_Win64_vc15_lib\include;$(SolutionDir)src\3rd\libuv-v1.x;$(SolutionDir)src;$(SolutionDir)src\service;$(SolutionDir)src\service\task_worker\task_module;$(SolutionDir)src\service\task_worker\conf_module;$(SolutionDir)src\service\task_worker\health_module;$(SolutionDir)src\service\task_worker\codec;$(SolutionDir)src\service\common;$(SolutionDir)src\service\common\io_module;$(SolutionDir)src\service\common\timer_module;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)src\service\transfer_common\codec;$(SolutionDir)src\service\transfer_common\file_module;$(SolutionDir)src\service\transfer_common\resend;$(SolutionDir)src\service\transfer_common\rate_control;$(SolutionDir)src\service\transfer_client\conf_module;$(SolutionDir)src\service\transfer_client\io_module;$(SolutionDir)src\service\transfer_client\transfer_client_module;$(SolutionDir)src\service\transfer_common\common;$(SolutionDir)src\service\transfer_server\conf_module;$(SolutionDir)src\service\transfer_server\io_module;$(SolutionDir)src\service\transfer_server\transfer_server_module;$(IncludePath)</IncludePath>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)src\3rd;$(SolutionDir)src\3rd\micro_core;$(SolutionDir)src\3rd\boost_1_66_0;$(SolutionDir)src\3rd\leveldb;$(SolutionDir)src\3rd\protobuf-3.8.0;$(SolutionDir)src\3rd\openssl;$(SolutionDir)src\3rd\crypto;$(SolutionDir)src\3rd\secp256k1;$(SolutionDir)src\3rd\secp256k1\include;$(SolutionDir)src\3rd\lua-5.3.5_Win64_vc15_lib\include;$(SolutionDir)src;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(BOOST)\vc141-x64\lib\;$(SolutionDir)lib\leveldb;$(SolutionDir)lib\protobuf-3.8.0;$(SolutionDir)lib\micro_core;$(SolutionDir)lib\openssl;$(SolutionDir)lib\secp256k1;$(SolutionDir)lib\lua-5.3.5_Win64_vc15_lib;$(LibraryPath);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;_WIN32_WINNT=0x0600;WIN32;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4267;4244;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>micro_core.lib;libprotobufd.lib;libcrypto.lib;libssl.lib;secp256k1.lib;lua53.lib;LevelDB.lib;shlwapi.lib;libuv.lib;snappy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>BOOST_CONFIG_SUPPRESS_OUTDATED_MESSAGE;_WIN32_WINNT=0x0600;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>micro_core.lib;LevelDB.lib;libprotobufd.lib;libcrypto.lib;libssl.lib;secp256k1.lib;lua53.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\3rd\crypto\arith_uint256.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\base58.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\chacha20.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\cleanse.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\hash.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\hmac_sha512.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\key.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\lockedpool.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\pubkey.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\random.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\ripemd160.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\sha256.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\sha256_sse4.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\sha512.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\uint256.cpp" />
+    <ClCompile Include="..\src\3rd\crypto\utilstrencodings.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\service\common\timer_module\timer_generator_init.cpp" />
+    <ClCompile Include="..\src\service\common\util.cpp" />
+    <ClCompile Include="..\src\service\init_server.cpp" />
+    <ClCompile Include="..\src\service\server.cpp" />
+    <ClCompile Include="..\src\service\transfer_client\conf_module\trans_cli_config_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_client\io_module\trans_cli_io_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_client\transfer_client_module\trans_cli_download_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_client\transfer_client_module\trans_cli_sync_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_client\transfer_client_module\trans_cli_upload_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\codec\TransMessageApi.pb.cc" />
+    <ClCompile Include="..\src\service\transfer_common\codec\trans_codec.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\common\network_detect.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\common\path_rtt.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\common\trans_macro.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\common\trans_task.pb.cc" />
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_reader.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_reader_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_writer.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\file_module\file_writer_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\rate_control\rate_control.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\resend\resend_control.cpp" />
+    <ClCompile Include="..\src\service\transfer_common\resend\resend_scheduler.cpp" />
+    <ClCompile Include="..\src\service\transfer_server\conf_module\trans_svr_config_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_server\io_module\trans_svr_io_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_server\transfer_server_module\trans_svr_download_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_server\transfer_server_module\trans_svr_sync_manager.cpp" />
+    <ClCompile Include="..\src\service\transfer_server\transfer_server_module\trans_svr_upload_manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\3rd\crypto\arith_uint256.h" />
+    <ClInclude Include="..\src\3rd\crypto\base58.h" />
+    <ClInclude Include="..\src\3rd\crypto\byteswap.h" />
+    <ClInclude Include="..\src\3rd\crypto\chacha20.h" />
+    <ClInclude Include="..\src\3rd\crypto\cleanse.h" />
+    <ClInclude Include="..\src\3rd\crypto\crypto_common.h" />
+    <ClInclude Include="..\src\3rd\crypto\crypto_endian.h" />
+    <ClInclude Include="..\src\3rd\crypto\hash.h" />
+    <ClInclude Include="..\src\3rd\crypto\hmac_sha512.h" />
+    <ClInclude Include="..\src\3rd\crypto\key.h" />
+    <ClInclude Include="..\src\3rd\crypto\lockedpool.h" />
+    <ClInclude Include="..\src\3rd\crypto\pubkey.h" />
+    <ClInclude Include="..\src\3rd\crypto\random.h" />
+    <ClInclude Include="..\src\3rd\crypto\ripemd160.h" />
+    <ClInclude Include="..\src\3rd\crypto\secure.h" />
+    <ClInclude Include="..\src\3rd\crypto\sha256.h" />
+    <ClInclude Include="..\src\3rd\crypto\sha512.h" />
+    <ClInclude Include="..\src\3rd\crypto\tinyformat.h" />
+    <ClInclude Include="..\src\3rd\crypto\uint256.h" />
+    <ClInclude Include="..\src\3rd\crypto\utilstrencodings.h" />
+    <ClInclude Include="..\src\service\common\bytes_order.h" />
+    <ClInclude Include="..\src\service\common\macro.h" />
+    <ClInclude Include="..\src\service\common\timer_module\timer_generator_init.h" />
+    <ClInclude Include="..\src\service\common\util.h" />
+    <ClInclude Include="..\src\service\init_server.h" />
+    <ClInclude Include="..\src\service\transfer_client\conf_module\trans_cli_config_manager.h" />
+    <ClInclude Include="..\src\service\transfer_client\io_module\trans_cli_io_manager.h" />
+    <ClInclude Include="..\src\service\transfer_client\transfer_client_module\trans_cli_download_manager.h" />
+    <ClInclude Include="..\src\service\transfer_client\transfer_client_module\trans_cli_sync_manager.h" />
+    <ClInclude Include="..\src\service\transfer_client\transfer_client_module\trans_cli_upload_manager.h" />
+    <ClInclude Include="..\src\service\transfer_common\codec\TransMessageApi.pb.h" />
+    <ClInclude Include="..\src\service\transfer_common\codec\trans_codec.h" />
+    <ClInclude Include="..\src\service\transfer_common\codec\trans_handler_initializer.h" />
+    <ClInclude Include="..\src\service\transfer_common\codec\trans_service_message.h" />
+    <ClInclude Include="..\src\service\transfer_common\common\network_detect.h" />
+    <ClInclude Include="..\src\service\transfer_common\common\path_rtt.h" />
+    <ClInclude Include="..\src\service\transfer_common\common\trans_macro.h" />
+    <ClInclude Include="..\src\service\transfer_common\common\trans_task.pb.h" />
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_reader.h" />
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_reader_manager.h" />
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_writer.h" />
+    <ClInclude Include="..\src\service\transfer_common\file_module\file_writer_manager.h" />
+    <ClInclude Include="..\src\service\transfer_common\rate_control\rate_control.h" />
+    <ClInclude Include="..\src\service\transfer_common\resend\resend_control.h" />
+    <ClInclude Include="..\src\service\transfer_common\resend\resend_scheduler.h" />
+    <ClInclude Include="..\src\service\transfer_server\conf_module\trans_svr_config_manager.h" />
+    <ClInclude Include="..\src\service\transfer_server\io_module\trans_svr_io_manager.h" />
+    <ClInclude Include="..\src\service\transfer_server\transfer_server_module\trans_svr_download_manager.h" />
+    <ClInclude Include="..\src\service\transfer_server\transfer_server_module\trans_svr_sync_manager.h" />
+    <ClInclude Include="..\src\service\transfer_server\transfer_server_module\trans_svr_upload_manager.h" />
+    <ClInclude Include="..\src\service\server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\service\common\util_asm.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ml64.exe /c /nologo /Zi /Fo"x64\Debug\util_asm.obj" /W3 /errorReport:prompt  /Ta..\src\service\common\util_asm.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">x64\Debug\util_asm.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
